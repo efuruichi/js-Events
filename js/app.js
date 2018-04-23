@@ -58,8 +58,8 @@ function redFace(){
 
 function showPrice(){
     var priceElem = document.getElementById("price");
-priceElem.innerHTML = "$5.55";
-document.getElementById(oreo).appendChild(priceElem);
+    priceElem.innerHTML = "$5.55";
+    document.getElementById(oreo).appendChild(priceElem);
 }
 
 //7. Mr. Buttons
@@ -67,6 +67,16 @@ document.getElementById(oreo).appendChild(priceElem);
 
 var myQuote = "Our lives are defined by opportunities; even the ones we miss.";
 
+var button1 = document.getElementById("Benjamin");
+button1.addEventListener("click", showQuote);
+
+function showQuote(){
+
+    var quoteElem = document.getElementById("displayQuote");
+  quoteElem.innerHTML = myQuote;
+  document.getElementById("Benjamin").appendChild("quoteElem");
+  
+}
 
 //8. Say It again, Randomly
 /*Create a function that will generate a random quote from the variable below after clicking on the button.*/
