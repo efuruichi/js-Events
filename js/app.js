@@ -22,6 +22,15 @@ function lessContent(){
     less.style.display = "none";
 }
 
+//function lessContent(){
+//    if (less.style.display === "none"){
+//        less.style.display = "block";
+//    }else{
+//        less.style.display = "none";
+//    }
+//}
+
+
 //3. Tacocat, The Original Palindrome King
 /*Create a function named `zoom` that will increase the font size of the paragraph with the id of `biggie` after hovering your mouse over it. Increae the font size to 150%*/
 
@@ -94,3 +103,15 @@ function random(){
 //9. Unlock the Secret to Financial Freedom
 /*Create an event listener that will show and hide the message when clicking on the button.
 */
+
+var button3 = document.getElementById("showHide");
+button3.addEventListener("click", showMsg);
+
+function showMsg() {
+    var showElem = document.getElementById("showmoney");
+    if (showElem.style.display === "none") {
+        showElem.style.display = "block";
+    } else {
+        showElem.style.display = "none";
+    }
+}
