@@ -19,22 +19,15 @@ function moreContent(){
 The function will hide the contents in the pargraph with the id of `less` after clicking on the `Show Less` link.*/
 
 function lessContent(){
-    if (less.style.display === "none"){
-        less.style.display = "block";
-    }else{
-        less.style.display = "none";
-    }
+    less.style.display = "none";
 }
 
 //3. Tacocat, The Original Palindrome King
 /*Create a function named `zoom` that will increase the font size of the paragraph with the id of `biggie` after hovering your mouse over it. Increae the font size to 150%*/
 
 function zoom(){
-    if (biggie.style.fontSize === "100%"){
-        biggie.style.fontSize = "100%";
-    }else{
-        biggie.style.fontSize = "150%";
-    }
+    biggie.style.fontSize = "150%"
+
 }
 
 //4. McDonalds
@@ -56,16 +49,18 @@ function valueMenu(){
 /*Create a function named redFace that will change the paragraph text to red and a font size of 30px after clicking on the text.*/
 
 function redFace(){
-    if (drink.style.color === "black", drink.style.fontSize === "100%") {
-        drink.style.color = "black", drink.style.fontSize = "100%";
-    }else{
-        drink.style.color = "red", drink.style.fontSize = "30px";
-    }
+    drink.style.color = "red";
+    drink.style.fontSize = "30px";
 }
 
 //6. Peanut Butter Cup Oreos
 /*Create a function `showPrice` that will add the price of `$5.55` inside the paragraph with the id `price` after hovering your mouse over the paragraph.*/
 
+function showPrice(){
+    var priceElem = document.getElementById("price");
+priceElem.innerHTML = "$5.55";
+document.getElementById(oreo).appendChild(priceElem);
+}
 
 //7. Mr. Buttons
 /*Add an Event Listener to the button that will display `myQuote` inside the paragraph with the id of `displayQuote` after the button is clicked.*/
