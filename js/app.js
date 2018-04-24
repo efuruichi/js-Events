@@ -20,6 +20,7 @@ The function will hide the contents in the pargraph with the id of `less` after 
 
 function lessContent(){
     less.style.display = "none";
+    //pElem.innerHTML = ""; (empty string would work too)
 }
 
 //function lessContent(){
