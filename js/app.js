@@ -49,8 +49,8 @@ var menuItems = ["French Fries", " Apple Pie", " Coke"];
 
 function valueMenu(){
 
-    var menuElem = document.getElementById("menu");
-    menuElem.innerHTML = menuItems;
+ //   var menuElem = document.getElementById("menu");
+    menu.innerHTML = menuItems;
     document.getElementById(showMenu).appendChild(menuElem);
 
 }
@@ -59,8 +59,9 @@ function valueMenu(){
 /*Create a function named redFace that will change the paragraph text to red and a font size of 30px after clicking on the text.*/
 
 function redFace(){
-    drink.style.color = "red";
-    drink.style.fontSize = "30px";
+ //   drink.style.color = "red";
+ //   drink.style.fontSize = "30px";
+     drink.setAttribute("style", "color: red; font-size: 30px; background-color: cornflowerblue")
 }
 
 //6. Peanut Butter Cup Oreos
@@ -107,11 +108,12 @@ function random(){
 
 var button3 = document.getElementById("showHide");
 button3.addEventListener("click", showMsg);
+showmoney.style.display = "none"
 
 function showMsg() {
 //    var showElem = document.getElementById("showmoney");
     if (showmoney.style.display === "none") {
-        showmoney.style.display = "inline";
+        showmoney.style.display = "block";
     } else {
         showmoney.style.display = "none";
     }
