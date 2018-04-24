@@ -10,7 +10,7 @@ function moreContent(){
 
     var content = document.getElementById("more");
     content.innerHTML = bacon;
-    one.appendChild(content);
+//    one.appendChild(content);
 }
 
 //2. HTTP
