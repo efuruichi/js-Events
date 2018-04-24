@@ -108,10 +108,10 @@ var button3 = document.getElementById("showHide");
 button3.addEventListener("click", showMsg);
 
 function showMsg() {
-    var showElem = document.getElementById("showmoney");
-    if (showElem.style.display === "none") {
-        showElem.style.display = "block";
+//    var showElem = document.getElementById("showmoney");
+    if (showmoney.style.display === "none") {
+        showmoney.style.display = "inline";
     } else {
-        showElem.style.display = "none";
+        showmoney.style.display = "none";
     }
 }
